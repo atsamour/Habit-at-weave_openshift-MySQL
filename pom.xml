@@ -19,6 +19,13 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+
+	    <repository>
+	        <id>repo</id>
+	        <name>project</name>
+	        <url>file://${project.basedir}/repo</url>
+	    </repository>
+    
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
