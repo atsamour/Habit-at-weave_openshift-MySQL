@@ -24,8 +24,8 @@ public class HibernateUtil {
 		  	String DB_PORT = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
 
 			cfg.setProperty("hibernate.connection.url", "jdbc:mysql://" + DB_HOST + ":" + DB_PORT +"/awesomedb");
-			cfg.setProperty("hibernate.connection.username", System.getenv("DB_USERNAME"));
-			cfg.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
+			cfg.setProperty("hibernate.connection.username", DB_USERNAME );
+			cfg.setProperty("hibernate.connection.password", DB_PASSWORD );
 			SessionFactory sessionFactory = cfg.buildSessionFactory();
 
 			return sessionFactory;
