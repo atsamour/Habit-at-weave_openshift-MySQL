@@ -5,8 +5,8 @@
     <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <!-- <property name="connection.url">jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/awesomedb</property> -->
-    <property name="connection.url">jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:3306/awesomedb</property>
-    <property name="connection.username">${env.OPENSHIFT_MYSQL_DB_USERNAME}</property>
+    <property name="connection.url">jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/awesomedb</property>
+    <property name="connection.username">adminykpdFfV</property>
     <property name="connection.password">ZKV4KaWhE5NI</property>
     <property name="connection.autoReconnect">true</property>
     <property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>

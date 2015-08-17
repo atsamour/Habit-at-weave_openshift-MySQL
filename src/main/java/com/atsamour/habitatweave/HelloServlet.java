@@ -22,11 +22,10 @@ public class HelloServlet extends HttpServlet {
 
    String DB_USERNAME = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
  String DB_PASSWORD = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
- String DB_DATABASE = "mysql";
   String DB_HOST = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
   String DB_PORT = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
         out.write("Hello from servlet".getBytes());
-        out.write( ("\n " + DB_HOST + " " +DB_PORT) .getBytes());
+        out.write( ("\n " + DB_HOST + " " +DB_PORT +" "+DB_USERNAME+" "+DB_PASSWORD) .getBytes());
         out.write("Hello from servlet".getBytes());
         out.write("Hello from servlet".getBytes());
 
