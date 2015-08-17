@@ -25,7 +25,7 @@ import org.hibernate.Session;
 /**
  * Servlet implementation class LoginServlet
  */
-@WebServlet("/LoginServlet")
+//@WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 
     /**

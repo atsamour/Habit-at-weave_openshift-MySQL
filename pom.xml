@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.atsamour</groupId>
-	<artifactId>habitat</artifactId>
+	<groupId>com.atsamour.habitatweave</groupId>
+	<artifactId>habitatweave</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>habitat</name>
+	<name>Habitatweave Maven Webapp @oopenshift</name>
 	<description>AAL web application for CSD@AUTH undergrad final thesis</description>
+  	<url>http://github.com/atsamour</url>
 	<repositories>
 		<repository>
 			<id>eap</id>
@@ -91,12 +92,11 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		<dependency>
-			<groupId>atg.taglib.json</groupId>
-			<artifactId>json-taglib</artifactId>
-			<scope>system</scope>
-			<systemPath>${basedir}/json-taglib-0.4.1.jar</systemPath>
-			<version>0.4.1</version>
+        <dependency>
+            <groupId>atg.taglib.json</groupId>
+            <artifactId>json-taglib</artifactId>
+            <version>0.4.1</version>
+        </dependency>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>

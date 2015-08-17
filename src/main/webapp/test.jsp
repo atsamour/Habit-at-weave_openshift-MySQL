@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="json" uri="http://www.atg.com/taglibs/json" %>
 
 <!DOCTYPE html>
 <html lang="en">
