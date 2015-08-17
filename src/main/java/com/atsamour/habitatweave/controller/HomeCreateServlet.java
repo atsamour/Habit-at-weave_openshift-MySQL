@@ -123,7 +123,7 @@ public class HomeCreateServlet extends HttpServlet {
         }
 
         // draw JSP
-        RequestDispatcher rd = getServletContext().getRequestDispatcher("/secure/currentcost.jsp");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/secure/homecreate.jsp");
         rd.forward(request, response);
     }
     

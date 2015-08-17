@@ -65,8 +65,6 @@ public class OptionsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //request.setAttribute("message", "please give description and vendor name");
-        // new room
         if (request.getParameter("path") != null
                 && !request.getParameter("path").isEmpty()) {
 
@@ -81,7 +79,7 @@ public class OptionsServlet extends HttpServlet {
                 java.util.Date date = new Date();
                 Timestamp timestamp = new Timestamp(date.getTime());
 
-                Query query = session.createSQLQuery("INSERT INTO options (`user_id`, `path`, `time`) VALUES (:user_id, :path, :time)")
+                Query query = session.createSQLQuery("INSERT INTO options (user_id, path, time) VALUES (:user_id, :path, :time)")
                         .setInteger("user_id", Integer.parseInt(user_id))
                         .setString("path", path)
                         .setTimestamp("time", timestamp);
@@ -102,7 +100,7 @@ public class OptionsServlet extends HttpServlet {
 
         // draw JSP
         try {
-            request.getRequestDispatcher("/secure/options.jsp").include(request, response);
+            request.getRequestDispatcher("/secure/options.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         }
