@@ -123,11 +123,8 @@ public class HomeCreateServlet extends HttpServlet {
         }
 
         // draw JSP
-        try {
-            request.getRequestDispatcher("/secure/homecreate.jsp").include(request,response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        }
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/secure/currentcost.jsp");
+        rd.forward(request, response);
     }
     
     private void createAppliance(Session session, String description, String vendorname,
