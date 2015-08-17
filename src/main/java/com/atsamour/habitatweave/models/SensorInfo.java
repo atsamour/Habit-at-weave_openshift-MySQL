@@ -41,7 +41,8 @@ public class SensorInfo implements Serializable {
         this.date.add(date);
         this.time.add(time);
         this.watts.add(watts);
-        
+        //Try to connect ccdata with appliance
+        /*
         Session hiberSession = HibernateUtil.getSessionFactory().openSession();
         hiberSession.beginTransaction();
         try {
@@ -55,6 +56,7 @@ public class SensorInfo implements Serializable {
                 hiberSession.close();
             }
         }
+        */
     }
     
     public void addInfo(String sensorID, String date, String time, float watts){
