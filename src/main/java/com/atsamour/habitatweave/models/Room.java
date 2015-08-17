@@ -13,7 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name="room")
 public class Room implements Serializable {
     
     private static final long serialVersionUID = 72234543L;
